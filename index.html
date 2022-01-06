@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/icons/LogoCircle.svg">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="popup" class="popup hide-popup modal">
+        <p>Usuário Cadastrado!</p>
+    </section>
+    <section class="modal modal-register hide-modal" id="modal">
+        <div class="box-register">
+            <span onclick="hideModal()">X</span>
+            <h2 class="title">Cadastro</h2>
+            <input class="input" type="text" placeholder="Seu melhor e-mail">
+            <input class="input" type="password" placeholder="Informe sua senha">
+            <input class="input" type="password" placeholder="Informe a senha novamente">
+            <button class="button" onclick="showPopup()">
+                Cadastrar
+            </button>
+        </div>
+    </section>
+    <a name="home"></a>
+    <section class="main-container">
+        <header class="header-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./imgs/icons/Logo.svg" alt="Logo Rachi">
+                </a>
+            </div>
+            <nav class="header-navigation">
+                <a href="#functionality" class="nav-item">Funcionalidades</a>
+                <a href="#app" class="nav-item">App</a>
+                <a href="#plans" class="nav-item">Planos</a>
+                <a href="#contact" class="nav-item">Contato</a>
+            </nav>
+        </header>
+        <main class="content">
+            <div class="hero">
+                <h1 class="hero-title">
+                    Rachi,<br> é tudo que você<br> precisa em um só lugar.
+                </h1>
+                <button class="button" onclick="openModal()">
+                    Cadastrar-se
+                </button>
+            </div>
+            <img src="./imgs/bgs/ImageHero.svg" alt="Homem usando notebook na natureza">
+        </main>
+    </section>
+    <section class="container functionality-container">
+        <a class="anchor" name="functionality"></a>
+        <h2 class="title">Como funciona</h2>
+        <div class="functionality-cards">
+            <div class="card">
+                <img src="./imgs/icons/Connection.svg" alt="">
+                <h3 class="subtitle">
+                    Crie conexões
+                </h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="card">
+                <img src="./imgs/icons/Security.svg" alt="">
+                <h3 class="subtitle">
+                    100% gratuito
+                </h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+            <div class="card">
+                <img src="./imgs/icons/Smile.svg" alt="">
+                <h3 class="subtitle">
+                    Compartilhamento
+                </h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container app-container">
+        <a class="anchor" name="app"></a>
+
+        <div class="content-text">
+            <h3 class="title2">
+                Baixe nosso app para desfrutar mais!
+            </h3>
+            <p class="text">
+                Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.
+            </p>
+    
+            <div class="download">
+                <img src="./imgs/button/GooglePlayButton.svg" alt="">
+                <img src="./imgs/button/AppleStoreButton.svg" alt="">
+            </div>
+        </div>
+        <img src="./imgs/bgs/ImageApp.svg" alt="">
+    </section>
+
+    <section class="container plans-container">
+        <a class="anchor" name="plans"></a>
+
+            <h3 class="title">
+                Nossos planos
+            </h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia <br> mi quis euismod ultrices.
+            </p>
+        <div class="plans-cards-container">
+            <div class="plans-card">
+                <h4 class="card-title">
+                    Bronze
+                </h4>
+                <div class="price">
+                    <div class="value">
+                        <span>R$</span>
+                        <p>28</p>
+                    </div>
+                    <p>/mês</p>
+                </div>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.
+                </p>
+                <button class="button">
+                    Assinar
+                </button>
+            </div>
+
+            <div class="plans-card favorite">
+                <h4 class="card-title">
+                    Prata
+                </h4>
+                <div class="button button-favorite">Preferido</div>
+                <div class="price">
+                    <div class="value">
+                        <span>R$</span>
+                        <p>57</p>
+                    </div>
+                    <p>/mês</p>
+                </div>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.
+                </p>
+                <button class="button">
+                    Assinar
+                </button>
+            </div>
+
+            <div class="plans-card">
+                <h4 class="card-title">
+                    Ouro
+                </h4>
+                <div class="price">
+                    <div class="value">
+                        <span>R$</span>
+                        <p>94</p>
+                    </div>
+                    <p>/mês</p>
+                </div>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi quis euismod ultrices.
+                </p>
+                <button class="button">
+                    Assinar
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="container contact-container">
+        <a class="anchor anchor-footer" name="contact"></a>
+
+        <h3 class="title">Contato</h3>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec<br> lacinia mi quis euismod ultrices.</p>
+        <form>
+            <input class="input" type="text" placeholder="Seu melhor e-mail">
+            <button class="button">Enviar</button>
+
+        </form>
+        <!-- <img src="/Desafio19-Rachi/imgs/bgs/ImageContact.svg" alt=""> -->
+    </section>
+    <footer>
+        <p>Rachi - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
